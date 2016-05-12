@@ -65,3 +65,12 @@ article {
 	padding: 0;
 	margin-bottom: 4em;
 }
+
+#map {
+    height: 250px;
+    width: 100%;
+    @include media($bp-large) {
+        margin: 0;
+        padding: 0;
+    }
+}
