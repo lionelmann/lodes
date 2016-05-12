@@ -21,7 +21,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <section role="hero" style="background-image: url(<?php echo $banner_url[0]; ?>);">
     <header>
-        <h2 class="reverse--text text__shadow animated fadeInDown"><?php echo $headline; ?></h2>
+        <h2 class="headline reverse--text text__shadow animated fadeInDown"><?php echo $headline; ?></h2>
         <?php if($banner_excerpt) : ?>
             <p class="reverse--text"><?php echo $banner_excerpt; ?></p>
         <?php endif ?> 
