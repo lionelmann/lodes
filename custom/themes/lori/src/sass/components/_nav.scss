@@ -1,0 +1,53 @@
+.menu-btn {
+    color: $base-link-color;
+    float: right;
+    font-family: $sans-serif;
+    font-size: 1.5em;
+    padding: .7em 1em 0 0;
+    text-transform: uppercase;
+    &:after {
+        content: ' \f0c9';
+        font-family: fontAwesome;
+        font-weight: 400;
+        color: $base-link-color;
+    }
+    &.active-menu:after {
+        content: ' \f05c';
+        color: $base-link-color;
+    }
+    &:hover {
+        color: $hover-link-color;
+    }
+    @include media($bp-large) {
+        display: none;
+    }
+}
+
+
+nav {
+    @include media($bp-large) {
+        font-family: $sans-serif;
+        position: absolute;
+        right: 10px;
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 2em;
+            li {
+                font-size: 1rem;
+                display: inline;
+                margin: .7em;
+                a {
+                    color: $base-link-color;
+                    &:hover {
+                        color: $hover-link-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.current-menu-item a {
+    color: $hover-link-color;
+}

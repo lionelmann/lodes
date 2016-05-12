@@ -1,0 +1,12 @@
+.top-header {
+	background-color: $header-bg-color;
+    img {
+    	float: left;
+    	max-width: 150px;
+    	padding: .5em 0 .5em 1em;
+    	@include media($bp-large) {
+            padding: 1em 0 1em 2em;
+    		max-width: 320px;
+    	}
+    }
+}

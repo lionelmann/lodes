@@ -1,0 +1,25 @@
+section[role=hero] {
+    background-size:cover;
+    background-position:80% 20%;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 80px;
+        height: 585px;
+        background-color: rgba(0,0,0,.2);
+        z-index: 0;
+    }
+    */
+    header {
+        @include outer-container;
+        text-align: center;
+    }
+}

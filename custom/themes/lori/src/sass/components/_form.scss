@@ -1,0 +1,174 @@
+fieldset {
+    border: 0;
+    padding: 0;
+    ol {
+        padding: 0;
+        li {
+            display: block;
+            margin-bottom: 1em;
+            margin: 0;
+        }
+    }
+}
+
+
+footer textarea,
+#{$all-text-inputs},
+select[multiple=multiple] {
+    @include box-sizing(border-box);
+    @include transition(border-color);
+    background-color: white;
+    border-radius: $form-border-radius;
+    border: 1px solid $form-border-color;
+    box-shadow: $form-box-shadow;
+    //font-family: $sans-serif;
+    font-size: 1.4em;
+    margin-bottom: $base-line-height / 2;
+    //margin-right: 10px;
+    padding: $base-line-height / 2.3 $base-line-height / 2.3;
+    //width: 100%;
+    &:hover {
+        border-color: $form-border-color-hover;
+    }
+    &:focus {
+        border-color: $form-border-color-focus;
+        box-shadow: $form-box-shadow-focus;
+        color: $dr-green;
+        outline: none;
+    }
+}
+
+footer input[type="submit"] {
+    -webkit-font-smoothing: antialiased;
+    @include appearance(none);
+    background-color: $white;
+    border-radius: $base-border-radius;
+    border: none;
+    color: $green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $sans-serif;
+    font-weight: 500;
+    font-size: 1.4em;
+    padding: .3em 1em .5em 1em;
+    text-decoration: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+    @include media($bp-large) {
+        //float: right;
+        width: auto;
+        margin-left: .5em;
+    }
+
+    &:hover {
+        background-color: lighten($green, 20);
+        color: $white;
+    }
+}
+
+footer input[type="email"] {
+    width: 100%;
+    float: none;
+    @include media($bp-large) {
+        width: 73%;
+        float: left;
+    }
+}
+
+#searchform {
+  @include outer-container();
+  input[type=text] {
+    background-color: $search-bg-color;
+    border: none;
+    border-bottom: 1px solid $light-font-color;
+    color: $light-font-color;
+    font-size: 3rem;
+    margin-top: 60px;
+      width: 100%;
+    }
+    input[type=text]:focus, textarea:focus {
+      border-bottom: 1px solid $light-font-color;
+      outline: 0;
+  }
+}
+
+
+
+
+
+/* form starting stylings ------------------------------- */
+
+.group            { 
+  position:relative; 
+  margin-bottom:35px; 
+}
+
+input               {
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  //display:block;
+  width:70%;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus         { outline:none; }
+
+
+/* BOTTOM BARS ================================= */
+.bar    { position:relative; display:block; width:70%; }
+.bar:before, .bar:after     {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:$base-accent-color; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from { background:$base-accent-color; }
+  to    { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background:$base-accent-color; }
+  to    { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+    from { background:$base-accent-color; }
+  to    { width:0; background:transparent; }
+}

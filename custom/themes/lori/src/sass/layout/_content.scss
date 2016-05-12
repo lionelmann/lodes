@@ -1,0 +1,81 @@
+main {
+	@include outer-container;
+	@include pad(2em);
+}
+
+article {
+	@include media($bp-large) {
+		@include span-columns(7);
+        &.center {
+            @include shift(2.5);
+        }
+        
+    }
+}
+
+.box-main {
+	@include outer-container;
+}
+
+.columns-2 {
+	@include media($bp-large) {
+		@include span-columns(5.5);
+		&:nth-of-type(2) {
+			@include shift(1);
+		}
+		@include omega(2n);
+	}
+}
+
+.columns-3 {
+	@include media($bp-large) {
+		text-align: center;
+		@include span-columns(4);
+		@include omega(3n);
+		padding: 2em;
+		margin-top: 2em;
+    }
+}
+
+.columns-4 {
+	@include media($bp-large) {
+		@include span-columns(3);
+  		@include omega(4n);
+    }
+}
+
+.columns-2-offset {
+	@include media($bp-large) {
+		@include span-columns(4);
+		&:nth-child(2){
+			@include span-columns(8);
+			padding-left: 2em;
+		}
+	}
+}
+
+.column-listings-small {
+	@include media($bp-large) {
+		width: 30%;
+		//@include span-columns(4);
+		//padding: 1em;
+		//background-color: $footer-bg-color;
+		border: 1px solid red;
+		float: left;
+    }
+}
+
+.column-listings-wide {
+	@include media($bp-large) {
+		width: 70%;
+		display: block;
+		float: left;
+		//@include span-columns(8);
+    }
+}
+.column-listings-inner {
+	@include media($bp-large) {
+		width: 45%;
+		margin: 0 1em 4em 1em;
+	}
+}

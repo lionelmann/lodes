@@ -1,0 +1,32 @@
+.ghost  {
+    background-color: none;
+    border-radius: 3px;
+    border: 1px solid $white;
+    &:hover {
+        background-color: lighten($white, 12);
+    }
+}
+
+.anchor.ghost {
+    background-color: lighten($blue, 12);
+}
+
+.ghost__text {
+    color: $white;
+    padding: .4em .8em .4em .8em;
+    font-size: 1.3rem;
+    font-weight: 500;
+    &:hover {
+        color: $blue;
+    }
+}
+
+.ghost--nav {
+    position: absolute;
+    right: 100px;
+    top: 11px;
+    @include media($bp-large) {
+        right: 145px;
+        top: 17px;
+    }   
+}

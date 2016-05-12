@@ -1,0 +1,70 @@
+@include font-face("Serendity", "dist/fonts/Serendity Script", $file-formats: eot ttf woff2 woff);
+@include font-face("Font Awesome", "dist/fonts/fontawesome-webfont", $file-formats: eot ttf woff2 woff);
+
+$sans-serif: 'rucksack',sans-serif;
+$serif: 'jubilat',sans-serif;
+$cursive: 'Serendity';
+$fontawesome: 'Font Awesome';
+
+$base-font-family: $sans-serif;
+$header-font-family: $sans-serif;
+$header-secondary-family: $serif;
+
+//	Modular Scale
+$modular-scale-ratio: $perfect-fourth;
+$modular-scale-base: 1rem;
+
+// Sizes
+$base-line-height: $modular-scale-base * 1.5;
+$base-border-radius: rem(3);
+
+// Colors
+$white: rgba(255,255,255, 1);
+$black: rgb(0, 0, 0);
+$green: rgba(110,180,63, 1);
+$blue:	rgba(43, 114, 165, 1);
+$purple: rgba(47,7,48, 1);
+$orange: rgba(112,42,16, 1);
+$dr-green: rgba(34,61,15,1);
+
+// Background Color
+$body-bg-color: lighten($black, 100);
+$search-bg-color: $blue;
+$header-bg-color: $white;
+$footer-bg-color: lighten($black, 50);
+$stats-bg-color: lighten($black, 20);
+$video-bg-color: lighten($black, 20);
+$program-stats-bg-color: $dr-green;
+
+
+// Buttons
+$button-color: $black;
+$button-hover-color: $blue;
+$nav-color: lighten($black, 80);
+
+// Font Colors
+$base-font-color: lighten($black, 20);
+$base-accent-color: $blue;
+$light-font-color: $white;
+$headline-font-color: $white;
+
+// Link Colors
+$base-link-color: $base-accent-color;
+$hover-link-color: $green;
+$hover-button-color: $hover-link-color;
+
+// Border color
+$base-border-color: $blue;
+$button-background-color: $green;
+
+// Forms
+$form-border-color: $base-border-color;
+$form-focus-color: $green;
+$form-background-color: $white;
+$form-border-color-hover: darken($base-border-color, 10);
+$form-border-color-focus: $base-accent-color;
+$form-border-radius: $base-border-radius;
+$form-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
+$form-font-size: 2em;
+$form-font-family: $base-font-family;

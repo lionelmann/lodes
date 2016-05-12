@@ -1,0 +1,17 @@
+@import "../../components/neat/app/assets/stylesheets/neat-helpers";
+
+// Neat Overrides
+//$column: 3;
+$gutter: 2em;
+$grid-columns: 5;
+$max-width: em(1200);
+
+// Major: Content centric breakpoints
+$bp-large: new-breakpoint(min-width 50em 12);
+$bp-small: new-breakpoint(max-width 50em 5);
+
+// Visual Grid view
+$visual-grid: false;
+$visual-grid-color: #000;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.2;

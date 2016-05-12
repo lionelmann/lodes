@@ -1,0 +1,37 @@
+/*!
+Theme Name: Lori
+Theme URI: http://wordpress.org/
+Description: Site by Lionel Mann
+Author: Lionel Mann
+Author URI: http://wordpress.org/
+Version: 1.0
+*/
+
+// Library
+@import "../components/normalize-scss/normalize";
+@import "../components/bourbon/app/assets/stylesheets/bourbon";
+
+// Neat Settings -- uncomment if using Neat -- must be imported before Neat
+@import "layout/grid-settings";
+@import "../components/neat/app/assets/stylesheets/neat";
+
+@import "helpers/variables";
+
+@import "base/typography";
+@import "base/wp_core";
+
+@import "layout/header";
+@import "layout/content";
+@import "layout/footer";
+@import "layout/hero";
+@import "layout/sidebar";
+
+//@import "components/avatar";
+@import "components/buttons";
+//@import "components/form";
+@import "components/nav";
+//@import "components/pagination";
+
+//@import "vendors/font-awesome";
+@import "vendors/animate";
+@import "vendors/pushy";
