@@ -4,7 +4,7 @@ include('includes/wp-cuztom-helper/cuztom.php');
 //Include post custom posts type. Dependent on /wp-cuztom-helper classes.
 include('includes/wp-cuztom-posts/custom-post-home.php');
 //include('includes/wp-cuztom-posts/custom-page.php');
-//include('includes/wp-cuztom-posts/custom-post-staff.php');
+include('includes/wp-cuztom-posts/custom-post-staff.php');
 
 //Load custom functions
 require_once('includes/functions/enqueue-style.php');

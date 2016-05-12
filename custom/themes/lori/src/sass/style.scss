@@ -26,12 +26,12 @@ Version: 1.0
 @import "layout/hero";
 @import "layout/sidebar";
 
-//@import "components/avatar";
+@import "components/avatar";
 @import "components/buttons";
 //@import "components/form";
 @import "components/nav";
 //@import "components/pagination";
 
-//@import "vendors/font-awesome";
+@import "vendors/font-awesome";
 @import "vendors/animate";
 @import "vendors/pushy";

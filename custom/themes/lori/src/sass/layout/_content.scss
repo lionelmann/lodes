@@ -8,13 +8,18 @@ article {
 		@include span-columns(7);
         &.center {
             @include shift(2.5);
-        }
-        
+        }  
     }
 }
 
-.box-main {
-	@include outer-container;
+.wide {
+	@include media($bp-large) {
+		@include span-columns(10);
+		padding-top: 2em;
+		&.center {
+            @include shift(1);
+        }  
+	}
 }
 
 .columns-2 {
@@ -46,36 +51,17 @@ article {
 
 .columns-2-offset {
 	@include media($bp-large) {
-		@include span-columns(4);
+		@include span-columns(3);
 		&:nth-child(2){
-			@include span-columns(8);
+			@include span-columns(9);
 			padding-left: 2em;
+			@include omega();
 		}
 	}
 }
 
-.column-listings-small {
-	@include media($bp-large) {
-		width: 30%;
-		//@include span-columns(4);
-		//padding: 1em;
-		//background-color: $footer-bg-color;
-		border: 1px solid red;
-		float: left;
-    }
-}
-
-.column-listings-wide {
-	@include media($bp-large) {
-		width: 70%;
-		display: block;
-		float: left;
-		//@include span-columns(8);
-    }
-}
-.column-listings-inner {
-	@include media($bp-large) {
-		width: 45%;
-		margin: 0 1em 4em 1em;
-	}
+.staff ul {
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 4em;
 }

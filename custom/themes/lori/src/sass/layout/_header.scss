@@ -1,5 +1,9 @@
 .top-header {
 	background-color: $header-bg-color;
+    @include media($bp-large) {
+    height: 115px;
+}
+
     img {
     	float: left;
     	max-width: 150px;
