@@ -23,19 +23,13 @@ $white: rgba(255,255,255, 1);
 $black: rgb(0, 0, 0);
 $green: rgba(110,180,63, 1);
 $blue:	rgba(43, 114, 165, 1);
-$purple: rgba(47,7,48, 1);
-$orange: rgba(112,42,16, 1);
-$dr-green: rgba(34,61,15,1);
 
 // Background Color
 $body-bg-color: lighten($black, 100);
 $search-bg-color: $blue;
 $header-bg-color: $white;
-$footer-bg-color: lighten($black, 50);
-$stats-bg-color: lighten($black, 20);
-$video-bg-color: lighten($black, 20);
-$program-stats-bg-color: $dr-green;
-
+$footer-bg-color: lighten($black, 90);
+$copyright-bg-color: lighten($black, 50);
 
 // Buttons
 $button-color: $black;

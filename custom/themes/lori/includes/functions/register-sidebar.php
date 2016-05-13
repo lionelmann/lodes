@@ -5,9 +5,19 @@
 */
 
 register_sidebar(array(
- 	'name' => __( 'Homepage Testimonial' ),
- 	'id' => 'homepage-testimonial',
- 	'description' => __( 'Widgets in this area will be shown on the homepage in the customer experience section.' ),
+ 	'name' => __( 'Address' ),
+ 	'id' => 'address',
+ 	'description' => __( 'Address will appear in footer' ),
+  	'before_widget' => '',
+  	'after_widget' => '',
+  	'before_title' => '<span class="hidden" style="display: none;">',
+  	'after_title' => '</span>'
+));
+
+register_sidebar(array(
+ 	'name' => __( 'Contact' ),
+ 	'id' => 'contact',
+ 	'description' => __( 'Contact form will appear in footer' ),
   	'before_widget' => '',
   	'after_widget' => '',
   	'before_title' => '<span class="hidden" style="display: none;">',

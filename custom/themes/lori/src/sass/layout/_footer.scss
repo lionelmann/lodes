@@ -1,6 +1,6 @@
 footer {
     background-color: $footer-bg-color;
-    color: $white;
+    
     .inner {
         @include outer-container;
         padding: 2em 2em 1em 2em;
@@ -8,6 +8,8 @@ footer {
 }
 
 .copyright {
+    background-color: $copyright-bg-color;
+    color: $white;
     @include media($bp-large) {
         small {
             &:nth-of-type(1) {

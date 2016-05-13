@@ -2,11 +2,15 @@
 	<div class="inner">
         <div class="columns-2">
             <h4>Address</h4>
-            <p>Address here</p>
+            <?php if ( is_active_sidebar( 'address' ) ) : ?>
+                <?php dynamic_sidebar( 'address' ); ?>
+            <?php endif; ?>
         </div>
         <div class="columns-2">
             <h4>Contact</h4>
-            <p>Form here</p>
+            <?php if ( is_active_sidebar( 'contact' ) ) : ?>
+                <?php dynamic_sidebar( 'contact' ); ?>
+            <?php endif; ?>
         </div>
     </div>
 </footer>
