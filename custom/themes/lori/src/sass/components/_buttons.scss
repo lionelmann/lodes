@@ -30,3 +30,36 @@
         top: 17px;
     }   
 }
+
+.btn {
+    //background-color: rgba(0,0,0,1);
+    border: 1px solid transparent;
+    border-radius: 2px;
+    color: #fff;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 150%;
+    padding: .2em .3em .2em .29em;
+    touch-action: manipulation;
+    white-space: nowrap;
+    text-transform: uppercase;
+    &:hover{
+        //background-color: rgba(0,0,0,.5);
+    }
+}
+
+
+.btn__sans {
+    font-family: $sans-serif;
+    margin-bottom: 30px;
+}
+
+.btn__menu {
+    float:right;
+    margin: .5em;
+    &:before {
+        content:"\f0c9";
+    }
+    &.jv-active:before {
+        content:"\f00d";
+    }
+}

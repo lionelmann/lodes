@@ -14,7 +14,8 @@ var outputDir = 'dist';
 
 var scriptList = [
 	'src/components/jquery/dist/jquery.js',
-    'src/js/custom/pushy.js',
+    'src/js/custom/jvette.js',
+    //'src/js/custom/pushy.js',
     //'src/js/custom/customConfig.js',
     'src/js/custom/map.js'
 ];

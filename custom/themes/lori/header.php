@@ -20,6 +20,15 @@
         <div class="logo">
             <a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url' ); ?>/dist/images/logo-full.png"></a>
         </div>
+
+        <nav data-jv-content="right">
+            <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container' => false, 'items_wrap' => '<ul>%3$s</ul>') ); ?>
+        </nav>
+        <nav>
+            <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container' => false, 'items_wrap' => '<ul>%3$s</ul>') ); ?>
+        </nav>
+        <button class="btn btn__menu mobile" data-jv-trigger="right" /></button>
+
     </header>
     <!--
     <nav class="pushy pushy-right">
@@ -27,10 +36,10 @@
 	</nav>
 	-->
 
-	<!-- Pushy Menu -->
+	<!-- Pushy Menu 
 <nav class="pushy pushy-right">
     <ul>
-        <!-- Submenu -->
+        Submenu
         <li class="pushy-submenu">
             <a href="#">Submenu</a>
             <ul>
@@ -43,10 +52,11 @@
         <li class="pushy-link"><a href="#">Item 2</a></li>
     </ul>
 </nav>
+-->
 </section>
-
+<!--
 <div class="site-overlay"></div>
 
 <div id="container">
     <div class="menu-btn"></div>
-</div>
+</div>-->
