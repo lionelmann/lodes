@@ -23,7 +23,7 @@
     }
 }
 
-
+/*
 nav {
     @include media($bp-large) {
         font-family: $sans-serif;
@@ -44,6 +44,9 @@ nav {
                     }
                 }
             }
+            ul li {
+                display: block;
+            }
         }
     }
 }
@@ -51,3 +54,4 @@ nav {
 .current-menu-item a {
     color: $hover-link-color;
 }
+*/

@@ -1,9 +1,9 @@
-@include font-face("Serendity", "dist/fonts/Serendity Script", $file-formats: eot ttf woff2 woff);
+//@include font-face("Serendity", "dist/fonts/Serendity Script", $file-formats: eot ttf woff2 woff);
 @include font-face("Font Awesome", "dist/fonts/fontawesome-webfont", $file-formats: eot ttf woff2 woff);
 
-$sans-serif: 'rucksack',sans-serif;
+$sans-serif: 'Open Sans', sans-serif;
 $serif: 'jubilat',sans-serif;
-$cursive: 'Serendity';
+//$cursive: 'Serendity';
 $fontawesome: 'Font Awesome';
 
 $base-font-family: $sans-serif;
@@ -20,16 +20,16 @@ $base-border-radius: rem(3);
 
 // Colors
 $white: rgba(255,255,255, 1);
-$black: rgb(0, 0, 0);
-$green: rgba(110,180,63, 1);
-$blue:	rgba(43, 114, 165, 1);
+$black: rgba(0, 0, 0, 1);
+$green: rgba(74, 151, 65,1);
+$blue:	rgba(26, 141, 202, 1);
 
 // Background Color
 $body-bg-color: lighten($black, 100);
 $search-bg-color: $blue;
 $header-bg-color: $white;
-$footer-bg-color: lighten($black, 90);
-$copyright-bg-color: lighten($black, 50);
+$footer-bg-color: $blue;
+$copyright-bg-color: $green;
 
 // Buttons
 $button-color: $black;

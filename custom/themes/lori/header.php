@@ -21,9 +21,28 @@
             <a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url' ); ?>/dist/images/logo-full.png"></a>
         </div>
     </header>
+    <!--
     <nav class="pushy pushy-right">
-    	<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container' => false, 'items_wrap' => '<ul>%3$s</ul>')); ?>
+    	<?php //wp_nav_menu( array( 'theme_location' => 'header-menu', 'container' => false, 'items_wrap' => '<ul>%3$s</ul>')); ?>
 	</nav>
+	-->
+
+	<!-- Pushy Menu -->
+<nav class="pushy pushy-right">
+    <ul>
+        <!-- Submenu -->
+        <li class="pushy-submenu">
+            <a href="#">Submenu</a>
+            <ul>
+                <li class="pushy-link"><a href="#">Item 1</a></li>
+                <li class="pushy-link"><a href="#">Item 2</a></li>
+                <li class="pushy-link"><a href="#">Item 3</a></li>
+            </ul>
+        </li>
+        <li class="pushy-link"><a href="#">Item 1</a></li>
+        <li class="pushy-link"><a href="#">Item 2</a></li>
+    </ul>
+</nav>
 </section>
 
 <div class="site-overlay"></div>

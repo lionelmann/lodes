@@ -18,8 +18,13 @@ get_header();?>
 </section>
 
 <main>
-
-
+<article class="center">
+    <?php // Loop starts
+        if(have_posts()): while(have_posts()): the_post(); ?>
+    <?php the_content(); ?>
+    <?php // Loop ends
+            endwhile; endif; ?>
+</article>
 
 <?php
     $args = array(
@@ -41,12 +46,12 @@ $loop = new WP_Query($args); ?>
     $staff_image_url    = wp_get_attachment_image_src($staff_image_id,'medium', true); ?>
 
 <section class="wide center staff">
+
     <div class="columns-2-offset">
-        <?php if ($staff_image_id) : ?>
-            <a href="<?php echo the_permalink(); ?>"><img class="avatar avatar--center" src="<?php echo $staff_image_url[0];?>"></a>
-        <?php endif ?>
         <ul>
-            <li><b><?php the_title(); ?></b></li>
+            <?php if ($staff_image_id) : ?>
+                <li><img class="avatar" src="<?php echo $staff_image_url[0];?>"></li>
+            <?php endif ?>
             <?php if ($job_title): 
                 echo '<li>' . $job_title . '</li>';
             endif ?>
@@ -60,6 +65,7 @@ $loop = new WP_Query($args); ?>
     </div>
     <div class="columns-2-offset">
         <ul>
+        <li><h4><?php the_title(); ?></h4></li>
             <?php if ($bio): 
                 echo '<li>' . $bio . '</li>';
             endif ?>

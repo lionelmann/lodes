@@ -50,7 +50,7 @@ $home->add_meta_box(
         array(
             'name'          => 'url',
             'label'         => 'Url',
-            'description'   => 'Example: http://www.foodshare.net/',
+            'description'   => 'Example: http://www.google.ca',
             'type'          => 'text',
         ),
     )
@@ -70,17 +70,11 @@ $home->add_meta_box(
 );
 
 $home->add_meta_box(
-    'features',
-    'Features',
+    'testimonial',
+    'Testimonials',
     array(
         'bundle', 
         array(
-             array(
-                'name'        => 'icon',
-                'label'       => 'Icon',
-                'description' => 'Go to <a href="https://fortawesome.github.io/Font-Awesome/icons/">Font Awesome</a>, chose a font and copy and paste snippet into text box. <br>For example: <b style="color: red;">fa-trophy</b>', 
-                'type'        => 'text'
-            ),
             array(
                 'name'          => 'text',
                 'label'         => 'Content',
