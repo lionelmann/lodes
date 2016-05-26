@@ -18,7 +18,7 @@ nav {
     float: right;
     margin-right: 0;
     @include media($bp-large) {
-        margin-right: 5rem;
+        margin-right: 1rem;
     }
     ul {
         list-style: none;
@@ -27,7 +27,7 @@ nav {
     }
     ul li a {
         text-decoration: none;
-        color: white;
+        color: $blue;
         border: none;
     }
     @include media($bp-large) {
@@ -48,11 +48,11 @@ nav {
         ul li a {
             display: block;
             margin-left: 0.4rem;
-            padding: 24px 20px 28px 20px;
+            padding: 40px 20px 10px 20px;
             margin: 0;
             text-decoration: none;
             white-space: nowrap;
-            color: white;
+            color: $blue;
             border: none;
             @include transition(background 0.5s ease);
             @include transition(color 0.5s ease);
@@ -62,16 +62,17 @@ nav {
         }
         ul li li a {
             display: block;
-            margin-left: 0;
+            margin-left: 20px;
             padding: 6px 20px 9px 20px;
             text-decoration: none;
             white-space: nowrap;
             color: white;
-            border: none;
+            //border: none;
+            
         }
         ul li a:hover{
-            background: lighten($blue,20);
-            color: white;
+            //background: lighten($blue,20);
+            color: $blue;
         }
         li:hover ul {
             display: block; 
@@ -81,15 +82,21 @@ nav {
             float: none;
         }
         li:hover a {
+            //background: $blue;
+            border: none;
+
+        }
+        li:hover li a {
             background: $blue;
             border: none;
+            color: white;
         }
         li:hover li a:hover {
             background: lighten($blue,20);
         }
         .current-menu-item a {
-            background: $blue;
-            color: white;
+            //background: $blue;
+            color: $green;
         }
     }
 }

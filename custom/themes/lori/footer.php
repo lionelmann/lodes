@@ -11,10 +11,7 @@
             <?php endif; ?>
         </div>
         <div class="columns-2">
-            <h4>Contact</h4>
-            <?php if ( is_active_sidebar( 'contact' ) ) : ?>
-                <?php dynamic_sidebar( 'contact' ); ?>
-            <?php endif; ?>
+    
         </div>
     </div>
     
