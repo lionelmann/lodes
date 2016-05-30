@@ -10,6 +10,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: $header-font-family;
     margin-bottom: modular-scale(1);
+    color: lighten($black,50);
+    font-weight: 200;
 }
 
 h1 { 
@@ -149,6 +151,7 @@ a {
 .headline {
     margin: 0;
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .reverse--text {

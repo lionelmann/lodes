@@ -4,17 +4,19 @@
 
 <footer>
     <div class="inner">
-        <div class="columns-2">
-            <h4>Address</h4>
-            <?php if ( is_active_sidebar( 'address' ) ) : ?>
-                <?php dynamic_sidebar( 'address' ); ?>
-            <?php endif; ?>
+    <article class='center'>
+        <div class="columns-3">
+            <a href="http://www.brainfx.com/" target="_blank"><img src="<?php bloginfo('template_url' ); ?>/dist/images/brainseal_admin.png"></a>
         </div>
-        <div class="columns-2">
-    
+        <div class="columns-3">
+            <a href="http://www.brainfx.com/" target="_blank"><img src="<?php bloginfo('template_url' ); ?>/dist/images/brainseal_provider.png"></a>
         </div>
+        <div class="columns-3">
+            <a href="http://www.cogmed.com/" target="_blank"><img src="<?php bloginfo('template_url' ); ?>/dist/images/cogmed-shield.png"></a>
+        </div>
+        </article>
     </div>
-    
+
     
     <div class="footer__copyright">
         <div class="inner">
