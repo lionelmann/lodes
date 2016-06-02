@@ -12,9 +12,8 @@ footer {
         filter: grayscale(100%);
         &:hover {
             -webkit-filter: grayscale(0%);
-        filter: grayscale(0%);
-        opacity: 1;
-
+            filter: grayscale(0%);
+            opacity: 1;
         }
     }
 }

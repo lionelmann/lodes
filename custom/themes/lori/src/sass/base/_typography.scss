@@ -151,7 +151,9 @@ a {
 .headline {
     margin: 0;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 300;
+    position: relative;
+    z-index: 10;
 }
 
 .reverse--text {
@@ -159,7 +161,7 @@ a {
 }
 
 .text__shadow {
-    text-shadow: 0 0 8px lighten($base-font-color, 10);
+    text-shadow: 0 0 6px lighten($base-font-color, 10);
 }
 
 .readmore {
