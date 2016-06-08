@@ -2,7 +2,7 @@
 	background-color: $header-bg-color;
     height: 60px;
     @include media($bp-large) {
-    height: 87px;
+    height: 100px;
 }
 
     img {
@@ -11,7 +11,7 @@
     	padding: .7em 0 .5em 1em;
     	@include media($bp-large) {
             padding: .9em 0 .9em 2em;
-    		max-width: 240px;
+    		max-width: 280px;
     	}
     }
 }

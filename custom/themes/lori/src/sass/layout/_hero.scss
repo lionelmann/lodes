@@ -11,9 +11,9 @@ section[role=hero] {
         position: absolute;
         left: 0;
         right: 0;
-        top: 87px;
+        top: 100px;
         height: 400px;
-        background-color: rgba(0,0,0,.2);
+        background-color: rgba(0,0,0,0);
     }
     header {
         @include outer-container;

@@ -28,8 +28,8 @@ $blue:	rgba(26, 141, 202, 1);
 $body-bg-color: lighten($black, 100);
 $search-bg-color: $blue;
 $header-bg-color: $white;
-$footer-bg-color: lighten($black, 50);
-$copyright-bg-color: lighten($black, 40);
+$footer-bg-color: $blue;
+$copyright-bg-color: $green;
 
 // Buttons
 $button-color: $black;

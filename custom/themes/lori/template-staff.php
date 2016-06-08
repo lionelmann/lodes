@@ -18,13 +18,6 @@ get_header();?>
 </section>
 
 <main>
-<article class="center">
-    <?php // Loop starts
-        if(have_posts()): while(have_posts()): the_post(); ?>
-    <?php the_content(); ?>
-    <?php // Loop ends
-            endwhile; endif; ?>
-</article>
 
 <?php
     $args = array(
@@ -45,33 +38,24 @@ $loop = new WP_Query($args); ?>
     $staff_image_id     = get_post_meta($post->ID,'_staff_image', true);
     $staff_image_url    = wp_get_attachment_image_src($staff_image_id,'medium', true); ?>
 
-<section class="wide center staff">
-
-    <div class="columns-2-offset">
-        <ul>
-            <?php if ($staff_image_id) : ?>
-                <li><img class="avatar" src="<?php echo $staff_image_url[0];?>"></li>
-            <?php endif ?>
-            <?php if ($job_title): 
-                echo '<li>' . $job_title . '</li>';
-            endif ?>
-            <?php if ($email): 
-                echo '<li>' . $email . '</li>';
-            endif ?>
-            <?php if ($direct): 
-                echo '<li>' . $direct . '</li>';
-            endif ?>
-        </ul>
+    <div class="columns-3 staff">
+        <?php if ($staff_image_id) : ?>
+            <img class="avatar" src="<?php echo $staff_image_url[0];?>">
+        <?php endif ?>
+        <h4><?php the_title(); ?></h4>
+        <?php if ($job_title): 
+            echo '<b>' . $job_title . '</b><br>';
+        endif ?>
+        <?php if ($email): 
+            echo $email . '<br>';
+        endif ?>
+        <?php if ($direct): 
+            echo $direct . '<br>';
+        endif ?>
+        <?php if ($bio): 
+            echo $bio;
+        endif ?>
     </div>
-    <div class="columns-2-offset">
-        <ul>
-        <li><h4><?php the_title(); ?></h4></li>
-            <?php if ($bio): 
-                echo '<li>' . $bio . '</li>';
-            endif ?>
-        </ul>
-    </div>
- </section>
 
     <?php // Loop ends
         endwhile; endif; ?>

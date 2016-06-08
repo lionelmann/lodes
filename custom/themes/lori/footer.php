@@ -5,13 +5,10 @@
 <footer>
     <div class="inner">
     <article class='center'>
-        <div class="columns-3">
+        <div class="columns-2">
             <a href="http://www.brainfx.com/" target="_blank"><img src="<?php bloginfo('template_url' ); ?>/dist/images/brainseal_admin.png"></a>
         </div>
-        <div class="columns-3">
-            <a href="http://www.brainfx.com/" target="_blank"><img src="<?php bloginfo('template_url' ); ?>/dist/images/brainseal_provider.png"></a>
-        </div>
-        <div class="columns-3">
+        <div class="columns-2">
             <a href="http://www.cogmed.com/" target="_blank"><img src="<?php bloginfo('template_url' ); ?>/dist/images/cogmed-shield.png"></a>
         </div>
         </article>
