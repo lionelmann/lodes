@@ -1,7 +1,3 @@
-<?php if (is_page( 'Contact' )) : ?>
-    <div id="map"></div>
-<?php endif; ?>
-
 <footer>
     <div class="inner">
     <article class='center'>

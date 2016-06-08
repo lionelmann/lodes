@@ -38,7 +38,7 @@ $loop = new WP_Query($args); ?>
     $staff_image_id     = get_post_meta($post->ID,'_staff_image', true);
     $staff_image_url    = wp_get_attachment_image_src($staff_image_id,'medium', true); ?>
 
-    <div class="columns-3 staff">
+    <div class="columns-3">
         <?php if ($staff_image_id) : ?>
             <img class="avatar" src="<?php echo $staff_image_url[0];?>">
         <?php endif ?>

@@ -14,11 +14,8 @@ article {
 
 .wide {
 	@include media($bp-large) {
-		@include span-columns(10);
-		padding-top: 2em;
-		&.center {
-            @include shift(1);
-        }  
+		@include span-columns(11);
+		 @include shift(.5);
 	}
 }
 
@@ -59,16 +56,12 @@ article {
 	}
 }
 
-.staff ul {
-	list-style-type: none;
-	padding: 0;
-	margin-bottom: 4em;
-}
-
 #map {
-    height: 250px;
+
+    height: 100%;
     width: 100%;
     @include media($bp-large) {
+    	
         margin: 0;
         padding: 0;
     }
