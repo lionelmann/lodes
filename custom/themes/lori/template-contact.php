@@ -20,12 +20,12 @@ get_header();?>
     </section>
 <?php endif ?>
 
-<main>
+<main style="padding-top: 0; padding-bottom: 0; padding-right: 0;">
   	<div class="columns-2">
         <h3><?php echo the_title(); ?></h3>
         <?php the_content(); ?>
   	</div>
-    <div class="columns-2" style="height: 640px;">
+    <div class="columns-2" style="height: 680px;">
         <div id="map"></div>
     </div>
 
