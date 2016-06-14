@@ -1,7 +1,7 @@
 section[role=hero] {
     background-size:cover;
-    background-position:80% 20%;
-    height: 400px;
+    background-position:65% 35%;
+    height: 500px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -11,8 +11,8 @@ section[role=hero] {
         position: absolute;
         left: 0;
         right: 0;
-        top: 100px;
-        height: 400px;
+        top: 120px;
+        height: 500px;
         background-color: rgba(0,0,0,0);
     }
     header {
