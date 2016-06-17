@@ -21,7 +21,7 @@ function init() {
         
     // Multiple Markers
     var markers = [
-        ['Toronto', 43.6568193,-79.4364738],
+        ['Third Line and Upper Middle', 43.437624,-79.7452707],
         ['Yonge and Eglinton', 43.706742,-79.4006607],
         ['Royal York and Oakfield', 43.632216, -79.504989],
     ];
@@ -64,7 +64,7 @@ function init() {
 
     // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
     var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
-        this.setZoom(12);
+        this.setZoom(10);
         google.maps.event.removeListener(boundsListener);
     });
     
