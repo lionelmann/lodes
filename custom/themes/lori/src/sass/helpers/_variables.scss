@@ -23,13 +23,15 @@ $white: rgba(255,255,255, 1);
 $black: rgba(0, 0, 0, 1);
 $green: rgba(74, 151, 65,1);
 $blue:	rgba(26, 141, 202, 1);
+$d-blue: rgba(31, 67, 128, 1);
+
 
 // Background Color
 $body-bg-color: lighten($black, 100);
 $search-bg-color: $blue;
 $header-bg-color: $white;
-$footer-bg-color: $blue;
-$copyright-bg-color: $green;
+$footer-bg-color: $d-blue;
+$copyright-bg-color: lighten($d-blue, 5);
 
 // Buttons
 $button-color: $black;

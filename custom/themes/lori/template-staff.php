@@ -47,7 +47,7 @@ $loop = new WP_Query($args); ?>
             echo '<b>' . $job_title . '</b><br>';
         endif ?>
         <?php if ($email): 
-            echo $email . '<br>';
+            echo '<a href="mailto:'. $email . '">'. $email . '</a><br>';
         endif ?>
         <?php if ($direct): 
             echo $direct . '<br>';

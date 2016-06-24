@@ -6,6 +6,7 @@ section[role=hero] {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.12);
     &:after {
         content: '';
         position: absolute;
@@ -15,6 +16,7 @@ section[role=hero] {
         height: 500px;
         background-color: rgba(0,0,0,0);
     }
+
     header {
         @include outer-container;
         text-align: center;
