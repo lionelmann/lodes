@@ -8,7 +8,10 @@ article {
 		@include span-columns(7);
         &.center {
             @include shift(2.5);
-        }  
+        }
+        .col-2 {
+        	@include span-columns(3.5 of 7);
+        }
     }
 }
 

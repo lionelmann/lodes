@@ -64,7 +64,7 @@ $home->add_meta_box(
             'name'          => 'content',
             'label'         => 'Text',
             'description'   => 'Enter text',
-            'type'          => 'textarea',
+            'type'          => 'wysiwyg',
         )
     )
 );
