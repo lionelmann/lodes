@@ -15,6 +15,13 @@ article {
     }
 }
 
+.semi-wide {
+	@include media($bp-large) {
+		@include span-columns(10);
+		 @include shift(1);
+	}
+}
+
 .wide {
 	@include media($bp-large) {
 		@include span-columns(11);
