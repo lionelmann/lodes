@@ -2,7 +2,7 @@
 
 <?php // Loop starts
 $args = array(
-    'post_type' => 'home_setup'
+    'post_type' => 'home_setup',
     );
 
 query_posts($args);
@@ -17,6 +17,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     $content        = wpautop(get_post_meta($post->ID, '_content_content', true));
     $cta_label      = get_post_meta($post->ID, '_action_button', true);
     $cta_url       	= get_post_meta($post->ID, '_action_url', true);
+    $testimonial    = get_post_meta($post->ID, '_testimonial', true);
 ?>
 
 <section role="hero" style="background-image: url(<?php echo $banner_url[0]; ?>);">
@@ -33,6 +34,16 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <main>
     <article class="center">
+        <?php if($testimonial) :
+            shuffle($testimonial);
+            $i = 0;
+            foreach($testimonial as $testimonials) {
+            if($i==1) break;
+            $s_testimonial  = $testimonials['_text']; ?> 
+            <blockquote><p><?php echo $s_testimonial; ?></p></blockquote> 
+            <?php $i++; ?>
+        <?php } endif ?>
+
         <?php echo $content; ?>
     </article>
 </main>
