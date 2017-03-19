@@ -1,13 +1,14 @@
 {
   "devDependencies": {
-    "gulp": "~3.8.10",
-    "gulp-imagemin": "~2.2.1",
-    "gulp-jshint": "~1.9.0",
+    "gulp": "~3.9.1",
+    "gulp-imagemin": "~3.1.1",
+    "gulp-jshint": "^2.0.4",
     "gulp-livereload": "~3.0.2",
     "gulp-notify": "~2.1.0",
     "gulp-plumber": "~0.6.6",
-    "gulp-ruby-sass": "^2.0.4",
+    "gulp-ruby-sass": "^2.1.1",
     "gulp-uglifyjs": "~0.5.0",
-    "imagemin-pngquant": "~4.0.0"
+    "imagemin-pngquant": "~5.0.0",
+    "jshint": "^2.9.4"
   }
 }

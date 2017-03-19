@@ -34,18 +34,19 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <main>
     <article class="center">
-        <?php if($testimonial) :
+        <?php echo $content; ?>
+    </article>
+    <article class="center">
+    <?php if($testimonial) :
             shuffle($testimonial);
             $i = 0;
             foreach($testimonial as $testimonials) {
             if($i==1) break;
             $s_testimonial  = $testimonials['_text']; ?> 
-            <blockquote><p><?php echo $s_testimonial; ?></p></blockquote> 
+            <blockquote style="text-align: left;"><p style="font-size: 1.3em;"><?php echo $s_testimonial; ?></p></blockquote> 
             <?php $i++; ?>
         <?php } endif ?>
-
-        <?php echo $content; ?>
-    </article>
+</article>
 </main>
 
 <?php endwhile; else : ?>
