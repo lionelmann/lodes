@@ -28,33 +28,9 @@ $home->add_meta_box(
             'description'   => 'Enter headline',
             'type'          => 'text',
         ),
-        array(
-            'name'          => 'text',
-            'label'         => 'Excerpt',
-            'description'   => 'Enter text',
-            'type'          => 'textarea',  
-        )
     )
 );
 
-$home->add_meta_box(
-    'action',
-    'Take action', 
-    array(
-        array(
-            'name'          => 'button',
-            'label'         => 'Button label',
-            'description'   => 'Enter button label and make your users want to click',
-            'type'          => 'text',
-        ),
-        array(
-            'name'          => 'url',
-            'label'         => 'Url',
-            'description'   => 'Example: http://www.google.ca',
-            'type'          => 'text',
-        ),
-    )
-);
 
 $home->add_meta_box(
     'content',
@@ -81,6 +57,23 @@ $home->add_meta_box(
                 'description'   => '',
                 'type'          => 'textarea',
                 
+            )
+        )
+    )
+);
+
+$home->add_meta_box(
+    'slider',
+    'Gallery <i>(Optional)</i>', 
+    array(
+        array(
+        'name'          => 'select',
+        'label'         => 'Select a related gallery',
+        'description'   => '',
+        'type'          => 'post_select',
+        'args'          => array(
+            'post_type' => 'slider',
+            'show_option_none' => "Select a Gallery",
             )
         )
     )

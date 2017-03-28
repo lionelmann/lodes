@@ -5,6 +5,8 @@ include('includes/wp-cuztom-helper/cuztom.php');
 include('includes/wp-cuztom-posts/custom-post-home.php');
 //include('includes/wp-cuztom-posts/custom-page.php');
 include('includes/wp-cuztom-posts/custom-post-staff.php');
+include('includes/wp-cuztom-posts/custom-post-slider.php');
+include('includes/wp-cuztom-posts/custom-post-page.php');
 
 //Load custom functions
 require_once('includes/functions/enqueue-style.php');

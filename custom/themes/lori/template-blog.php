@@ -5,9 +5,8 @@
 */
 get_header();?>
 
-
 <main>
-<article>
+<article class="center">
     <?php // Display blog posts on any page @ http://m0n.co/l
     $temp = $wp_query; 
     $wp_query= null;
@@ -36,6 +35,6 @@ get_header();?>
 
     <?php wp_reset_postdata(); ?>
 
-  </article>
+    </article>
 </main>
 <?php get_footer(); ?>
