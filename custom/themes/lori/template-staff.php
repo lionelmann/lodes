@@ -23,7 +23,7 @@ get_header();?>
     $args = array(
         'post_type' => 'staff',
         'posts_per_page' =>20,
-        'orderby' => 'title', 
+        'orderby' => 'date', 
         'order' => 'ASC'
 ); 
 $loop = new WP_Query($args); ?>
@@ -53,8 +53,8 @@ $loop = new WP_Query($args); ?>
             echo $direct . '<br>';
         endif ?>
         <?php if ($bio): 
-            echo $bio;
-        endif ?>
+            echo wp_trim_words($bio, 40); ?><a href="<?php echo get_permalink();?>">read more</a>
+        <?php endif ?>
     </div>
 
     <?php // Loop ends

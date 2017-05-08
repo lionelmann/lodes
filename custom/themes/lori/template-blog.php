@@ -5,6 +5,15 @@
 */
 get_header();?>
 
+<?php // Get meta and assign to variables
+    $thumbnail  = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'banner' ); ?>
+
+<section role="hero" class="center" style="background-image: url(<?php echo $thumbnail[0]; ?>);">
+    <header>
+        <h2 class="headline reverse--text text__shadow animated fadeInDown"><?php the_title(); ?></h2>
+    </header>
+</section>
+
 <main>
 <article class="center">
     <?php // Display blog posts on any page @ http://m0n.co/l
